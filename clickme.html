@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine</title>
+  </head>
+  <body>
+    <main class="container">
+      <img class="cat-img" src="img/cat-0.jpg" alt="Picture of a Patrick" />
+      <p class="title">Will you be my Valentine?</p>
+      <div class="buttons">
+        <button onclick="gotoLink(this)" value="https://wa.me/6285876946511" type="button" class="btn btn--yes">Yes</button>
+        <button type="button" class="btn btn--no">No</button>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+    <script>
+      function gotoLink(link){
+        console.log(link.value);
+        location.href = link.value;
+      }
+    </script>
+  </body>
+</html>
